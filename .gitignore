@@ -5,3 +5,5 @@
 /ConnectPayExample/Project.swift
 /ConnectPayExample/Pods
 /ConnectPayExample/ConnectPayExample/Resources/GoogleService-Info.plist
+*.xcuserstate
+UserInterfaceState.xcuserstate
