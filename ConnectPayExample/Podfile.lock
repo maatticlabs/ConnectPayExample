@@ -1,0 +1,16 @@
+PODS:
+  - ConnectPay (0.1.2)
+
+DEPENDENCIES:
+  - ConnectPay
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs:
+    - ConnectPay
+
+SPEC CHECKSUMS:
+  ConnectPay: 41b34efb683072e040e8bbb803140dfe01880d52
+
+PODFILE CHECKSUM: c3b02c9a70ac5815ae9ed3f2b800a47feb700281
+
+COCOAPODS: 1.11.2
