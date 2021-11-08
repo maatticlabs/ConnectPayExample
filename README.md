@@ -5,6 +5,6 @@ https://tosspayments.com
 Install
 ```
 > cd ConnectPayExample
-> bundle pod install
+> bundle exec pod install
 > open ConnectPayExample.xcworkspace
 ```
