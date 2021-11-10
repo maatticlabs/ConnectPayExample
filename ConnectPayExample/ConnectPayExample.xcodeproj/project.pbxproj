@@ -28,7 +28,6 @@
 		B2CB5D7A2B7B6BE5777C13C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6104F0127D3ED894C8376E0E /* AppDelegate.swift */; };
 		E4639A7BF68CEE4EB6E270EE /* PayMethodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B17DFF142AD4F442BD6EB9D /* PayMethodCell.swift */; };
 		E60CA28E02B4C5E220B0C00C /* CollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40669B3F3902BC9476DA0651 /* CollectionHeaderView.swift */; };
-		E7440EF4CFDD7EE67CFD9331 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 37789B6EED326A814ECD2D0E /* GoogleService-Info.plist */; };
 		FAB0D3E09BA3805DA1E22F85 /* ItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D8F59ECB6EF89386FD5358 /* ItemType.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,7 +49,6 @@
 		061678F96B5694E26B5A4B47 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		1F6CB4A07BA5BB7FE00E424E /* ConnectPayDemoViewController+ConnectPay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConnectPayDemoViewController+ConnectPay.swift"; sourceTree = "<group>"; };
 		2429AA2DC2A9EE61668D4423 /* ConnectPayDemoViewController+UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConnectPayDemoViewController+UICollectionView.swift"; sourceTree = "<group>"; };
-		37789B6EED326A814ECD2D0E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3B09AE2D3DDDB2F6838A4CC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		40669B3F3902BC9476DA0651 /* CollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionHeaderView.swift; sourceTree = "<group>"; };
 		4B17DFF142AD4F442BD6EB9D /* PayMethodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayMethodCell.swift; sourceTree = "<group>"; };
@@ -130,7 +128,6 @@
 				4DADD52EB8E85E96CB6CA52F /* LaunchScreen.storyboard */,
 				24C9386096492278503158A1 /* Main.storyboard */,
 				4F675332DD9BF3A4940FFF1C /* Assets.xcassets */,
-				37789B6EED326A814ECD2D0E /* GoogleService-Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -302,7 +299,6 @@
 				1600E2BDCEA15B552070671E /* Assets.xcassets in Resources */,
 				27077363563983F5616AE686 /* LaunchScreen.storyboard in Resources */,
 				37AC9189977FDC079AA6420A /* Main.storyboard in Resources */,
-				E7440EF4CFDD7EE67CFD9331 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
