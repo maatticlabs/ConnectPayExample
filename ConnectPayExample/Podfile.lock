@@ -1,5 +1,5 @@
 PODS:
-  - ConnectPay (0.1.2)
+  - ConnectPay (0.1.8)
 
 DEPENDENCIES:
   - ConnectPay
@@ -9,8 +9,8 @@ SPEC REPOS:
     - ConnectPay
 
 SPEC CHECKSUMS:
-  ConnectPay: 41b34efb683072e040e8bbb803140dfe01880d52
+  ConnectPay: dc8d71255749601c53c62ba3a51a113d98d175b6
 
-PODFILE CHECKSUM: c3b02c9a70ac5815ae9ed3f2b800a47feb700281
+PODFILE CHECKSUM: 9ba931ab0f437e2b4f5a0c55bca679a2176b5ebe
 
 COCOAPODS: 1.11.2

@@ -9,5 +9,4 @@ target 'ConnectPayExample' do
 
   # Pods for ConnectPayExample
   pod 'ConnectPay'
-
 end
