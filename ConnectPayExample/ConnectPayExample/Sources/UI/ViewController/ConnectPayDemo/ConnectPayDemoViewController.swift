@@ -88,8 +88,9 @@ class ConnectPayDemoViewController: UIViewController {
         alertController.addAction(UIAlertAction(title: "금액 변경", style: .default, handler: { _ in
 
         }))
-        alertController.addAction(UIAlertAction(title: "추가가 필요한가...", style: .default, handler: { _ in
-            
+        alertController.addAction(UIAlertAction(title: "웹뷰 테스트", style: .default, handler: { _ in
+            let viewController = ConnectPayWebInterfaceDemoViewController()
+            self.navigationController?.pushViewController(viewController, animated: true)
         }))
         
         present(alertController, animated: true)
@@ -106,6 +107,7 @@ class ConnectPayDemoViewController: UIViewController {
         alertController.addAction(UIAlertAction(title: "Live 서버 - Live Key", style: .default, handler: { _ in
             self.demoInfo = Constants.liveDemoInfo
         }))
+        
         present(alertController, animated: true)
     }
     
