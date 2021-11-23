@@ -17,5 +17,7 @@ Homebrew 가 없다면 https://brew.sh 르 통해 brew 설치
 
 Update
 
+```
 > bundle exec pod update
 > open ConnectPayExample.xcworkspace
+```
