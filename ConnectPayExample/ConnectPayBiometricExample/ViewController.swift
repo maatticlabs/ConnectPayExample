@@ -1,14 +1,14 @@
 //
-//  ConnectPayWebInterfaceDemoViewController.swift
-//  ConnectPayExample
+//  ViewController.swift
+//  ConnectPayBiometricExample
 //
-//  Created by 김진규 on 2021/11/15.
+//  Created by 김진규 on 2021/11/25.
 //  Copyright © 2021 com.tosspayments. All rights reserved.
 //
 
-import UIKit
 import WebKit
-import ConnectPayCore
+import ConnectPayBase
+import BiometricInterface
 
 final class ConnectPayWebInterfaceDemoViewController: UIViewController {
     lazy var webView: WKWebView = {
@@ -36,4 +36,13 @@ final class ConnectPayWebInterfaceDemoViewController: UIViewController {
     }
 }
 
-extension ConnectPayWebInterfaceDemoViewController: ConnectPayAppBridgeController {}
+extension ConnectPayWebInterfaceDemoViewController: WebViewControllerType {
+    func installAppBridges() {
+        let messageHandler = WebScriptMessageHandler()
+        messageHandler.controller = self
+        messageHandler.register(appBridge: BiometricAuthAppBridge())
+        webView.configuration.userContentController.add(messageHandler, name: "connectPayWebViewAction")
+        
+        self.messageHandler = messageHandler
+    }
+}

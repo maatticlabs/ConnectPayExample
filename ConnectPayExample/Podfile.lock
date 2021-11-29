@@ -1,16 +1,26 @@
 PODS:
-  - ConnectPay (0.1.8)
+  - ConnectPay/Biometric (0.1.10):
+    - ConnectPay/Core
+  - ConnectPay/Core (0.1.10)
+  - ConnectPay/OCR (0.1.10):
+    - ConnectPay/Core
+  - ConnectPay/UI (0.1.10):
+    - ConnectPay/Biometric
+    - ConnectPay/Core
+    - ConnectPay/OCR
 
 DEPENDENCIES:
-  - ConnectPay
+  - ConnectPay/Biometric
+  - ConnectPay/OCR
+  - ConnectPay/UI
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs:
     - ConnectPay
 
 SPEC CHECKSUMS:
-  ConnectPay: dc8d71255749601c53c62ba3a51a113d98d175b6
+  ConnectPay: 7cd3b3dcf735b80ad509e23f95672e854d21656e
 
-PODFILE CHECKSUM: 9ba931ab0f437e2b4f5a0c55bca679a2176b5ebe
+PODFILE CHECKSUM: 9039af217c1196e518b02642b25812eccdf63b5c
 
 COCOAPODS: 1.11.2

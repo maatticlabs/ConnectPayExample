@@ -3,10 +3,24 @@
 
 source 'https://github.com/CocoaPods/Specs'
 
-target 'ConnectPayExample' do
-  # Comment the next line if you don't want to use dynamic frameworks
+target 'ConnectPayBiometricExample' do
+  use_frameworks!
+  pod 'ConnectPay/Biometric'
+end
+
+target 'ConnectPayOCRExample' do
+  use_frameworks!
+  pod 'ConnectPay/OCR'
+end
+
+target 'ConnectPayWebInterfaceExample' do
+  use_frameworks!
+  pod 'ConnectPay/Biometric'
+  pod 'ConnectPay/OCR'
+end
+
+target 'ConnectPayUIExample' do
   use_frameworks!
 
-  # Pods for ConnectPayExample
-  pod 'ConnectPay'
+  pod 'ConnectPay/UI'
 end
