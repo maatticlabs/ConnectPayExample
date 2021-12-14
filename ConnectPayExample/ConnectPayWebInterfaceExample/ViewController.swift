@@ -41,11 +41,12 @@ extension ConnectPayWebInterfaceDemoViewController: WebViewControllerType {
     func installAppBridges() {
         let messageHandler = WebScriptMessageHandler()
         messageHandler.controller = self
-        messageHandler.register(appBridge: HasBiometricAuthAppBridge(allowedURLHostNameList: ["toss.im"]))
-        messageHandler.register(appBridge: GetBiometricAuthMethodsAppBridge(allowedURLHostNameList: ["toss.im"]))
-        messageHandler.register(appBridge: VerifyBiometricAuthAppBridge(allowedURLHostNameList: ["toss.im"]))
-        messageHandler.register(appBridge: RegisterBiometricAuthAppBridge(allowedURLHostNameList: ["toss.im"]))
-        messageHandler.register(appBridge: ScanOCRCardAppBridge(allowedURLHostNameList: ["toss.im"]))
+        messageHandler.register(appBridge: HasBiometricAuthAppBridge())
+        messageHandler.register(appBridge: GetBiometricAuthMethodsAppBridge())
+        messageHandler.register(appBridge: VerifyBiometricAuthAppBridge())
+        messageHandler.register(appBridge: RegisterBiometricAuthAppBridge())
+        messageHandler.register(appBridge: IsOCRAvailableAppBridge())
+        messageHandler.register(appBridge: ScanOCRCardAppBridge())
         
         webView.configuration.userContentController.add(messageHandler, name: "connectPayWebViewAction")
         
