@@ -52,4 +52,10 @@ extension ConnectPayWebInterfaceDemoViewController: WebViewControllerType {
         
         self.messageHandler = messageHandler
     }
+    
+    func evaluateJavaScriptSafely(javaScriptString: String) {
+        webView.evaluateJavaScript(javaScriptString) { (_, _) in
+            
+        }
+    }
 }
