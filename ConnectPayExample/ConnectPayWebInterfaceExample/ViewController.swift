@@ -12,8 +12,8 @@ import BiometricInterface
 import OCRInterface
 
 final class ConnectPayWebInterfaceDemoViewController: UIViewController {
-    lazy var webView: WKWebView = {
-        let webView = WKWebView()
+    lazy var webView: UIWebView = {
+        let webView = UIWebView()
         
         return webView
     }()
@@ -31,7 +31,8 @@ final class ConnectPayWebInterfaceDemoViewController: UIViewController {
             webView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
         ])
         
-        webView.load(URLRequest(url: URL(string: "https://toss.im")!))
+        webView.loadRequest(URLRequest(url: URL(string: "http://52.78.198.128/Open/ConnectPay.php?customerKey=km-lee")!))
+//        webView.load(URLRequest(url: URL(string: "http://52.78.198.128/Open/ConnectPay.php?customerKey=km-lee")!))
         
         installAppBridges()
     }
@@ -48,14 +49,14 @@ extension ConnectPayWebInterfaceDemoViewController: WebViewControllerType {
         messageHandler.register(appBridge: IsOCRAvailableAppBridge())
         messageHandler.register(appBridge: ScanOCRCardAppBridge())
         
-        webView.configuration.userContentController.add(messageHandler, name: "connectPayWebViewAction")
+//        webView.configuration.userContentController.add(messageHandler, name: "connectPayWebViewAction")
         
         self.messageHandler = messageHandler
     }
     
     func evaluateJavaScriptSafely(javaScriptString: String) {
-        webView.evaluateJavaScript(javaScriptString) { (_, _) in
-            
-        }
+//        webView.evaluateJavaScript(javaScriptString) { (_, _) in
+//
+//        }
     }
 }
