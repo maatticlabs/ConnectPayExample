@@ -45,6 +45,7 @@ extension ConnectPayWebInterfaceDemoViewController: WebViewControllerType {
         messageHandler.register(appBridge: GetBiometricAuthMethodsAppBridge())
         messageHandler.register(appBridge: VerifyBiometricAuthAppBridge())
         messageHandler.register(appBridge: RegisterBiometricAuthAppBridge())
+        messageHandler.register(appBridge: UnregisterBiometricAuthAppBridge())
         messageHandler.register(appBridge: IsOCRAvailableAppBridge())
         messageHandler.register(appBridge: ScanOCRCardAppBridge())
         
