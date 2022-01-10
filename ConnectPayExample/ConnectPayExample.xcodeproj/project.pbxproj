@@ -40,6 +40,7 @@
 		6A2153F3274FAE7F00BF0C6B /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FAC81E5B33073ADCF0E0AA /* ProductCell.swift */; };
 		6A2153F4274FAE7F00BF0C6B /* PayMethodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B17DFF142AD4F442BD6EB9D /* PayMethodCell.swift */; };
 		6A2153F5274FAE7F00BF0C6B /* DestinationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFB6ADF9FE5F35C499E169E /* DestinationCell.swift */; };
+		6A68E006278C099C00F42086 /* tosspayment_20220106.flk in Resources */ = {isa = PBXBuildFile; fileRef = 6A68E005278C099C00F42086 /* tosspayment_20220106.flk */; };
 		6A6A3B88275103D900021E50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6A3B87275103D900021E50 /* AppDelegate.swift */; };
 		6A6A3B8C275103D900021E50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6A3B8B275103D900021E50 /* ViewController.swift */; };
 		6A6A3B8F275103D900021E50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A6A3B8D275103D900021E50 /* Main.storyboard */; };
@@ -82,6 +83,7 @@
 		6A2153DE274FADCB00BF0C6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A2153E1274FADCB00BF0C6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A2153E3274FADCB00BF0C6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A68E005278C099C00F42086 /* tosspayment_20220106.flk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tosspayment_20220106.flk; sourceTree = "<group>"; };
 		6A6A3B85275103D900021E50 /* ConnectPayWebInterfaceExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConnectPayWebInterfaceExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A6A3B87275103D900021E50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A6A3B8B275103D900021E50 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -270,9 +272,18 @@
 			path = ConnectPayUIExample;
 			sourceTree = "<group>";
 		};
+		6A68DFFE278C097600F42086 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				6A68E005278C099C00F42086 /* tosspayment_20220106.flk */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		6A6A3B86275103D900021E50 /* ConnectPayWebInterfaceExample */ = {
 			isa = PBXGroup;
 			children = (
+				6A68DFFE278C097600F42086 /* Assets */,
 				6A6A3B87275103D900021E50 /* AppDelegate.swift */,
 				6A6A3B8B275103D900021E50 /* ViewController.swift */,
 				6A6A3B8D275103D900021E50 /* Main.storyboard */,
@@ -472,6 +483,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A6A3B94275103DA00021E50 /* LaunchScreen.storyboard in Resources */,
+				6A68E006278C099C00F42086 /* tosspayment_20220106.flk in Resources */,
 				6A6A3B91275103DA00021E50 /* Assets.xcassets in Resources */,
 				6A6A3B8F275103D900021E50 /* Main.storyboard in Resources */,
 			);
@@ -1046,6 +1058,7 @@
 				DEVELOPMENT_TEAM = NXA4356DUW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ConnectPayWebInterfaceExample/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera Test";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = TEST;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -1082,6 +1095,7 @@
 				DEVELOPMENT_TEAM = NXA4356DUW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ConnectPayWebInterfaceExample/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera Test";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = TEST;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;

@@ -47,7 +47,9 @@ extension ConnectPayWebInterfaceDemoViewController: WebViewControllerType {
         messageHandler.register(appBridge: RegisterBiometricAuthAppBridge())
         messageHandler.register(appBridge: UnregisterBiometricAuthAppBridge())
         messageHandler.register(appBridge: IsOCRAvailableAppBridge())
-        messageHandler.register(appBridge: ScanOCRCardAppBridge())
+        
+        // * OCR 기능은 앱 패키지 별로 flk license file 로 관리됩니다.
+        messageHandler.register(appBridge: ScanOCRCardAppBridge(licenseKeyFile: "tosspayment_20220106.flk"))
         
         webView.configuration.userContentController.add(messageHandler, name: "connectPayWebViewAction")
         
