@@ -17,7 +17,6 @@ final class ConnectPayWebInterfaceDemoViewController: UIViewController {
         
         return webView
     }()
-    var messageHandler: WKScriptMessageHandler?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -84,14 +83,14 @@ extension ConnectPayWebInterfaceDemoViewController: WebViewControllerType {
         messageHandler.register(appBridge: VerifyBiometricAuthAppBridge())
         messageHandler.register(appBridge: RegisterBiometricAuthAppBridge())
         messageHandler.register(appBridge: UnregisterBiometricAuthAppBridge())
-        messageHandler.register(appBridge: IsOCRAvailableAppBridge())
-        
-        // * OCR 기능은 앱 패키지 별로 flk license file 로 관리됩니다.
+        webView.configuration.userContentController.add(messageHandler, name: "connectPayAuth")
+//         * OCR 기능은 앱 패키지 별로 flk license file 로 관리됩니다.
         messageHandler.register(appBridge: ScanOCRCardAppBridge(licenseKeyFile: "tosspayment_20220106.flk"))
+        messageHandler.register(appBridge: IsOCRAvailableAppBridge())
+        webView.configuration.userContentController.add(messageHandler, name: "connectPayOCR")
         
-        webView.configuration.userContentController.add(messageHandler, name: "connectPayWebViewAction")
-        
-        self.messageHandler = messageHandler
+        // Deprecated: connectPayAuth, connectPayOCR 두개의 javascript object 로 나뉘어졌음
+        webView.configuration.userContentController.add(messageHandler, name: "connectWebViewAction")
     }
     
     func evaluateJavaScriptSafely(javaScriptString: String) {
