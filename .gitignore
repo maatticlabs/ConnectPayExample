@@ -7,3 +7,5 @@
 /ConnectPayExample/ConnectPayExample/Resources/GoogleService-Info.plist
 *.xcuserstate
 UserInterfaceState.xcuserstate
+/ConnectPayExample/ConnectPayWebInterfaceExample/GoogleService-Info.plist
+/ConnectPayExample/ConnectPayExample.xcworkspace/xcshareddata/swiftpm/Package.resolved

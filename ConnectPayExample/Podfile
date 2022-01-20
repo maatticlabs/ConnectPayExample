@@ -12,7 +12,7 @@ target 'ConnectPayOCRExample' do
   pod 'ConnectPay/OCR'
 end
 
-target 'ConnectPayWebInterfaceExample' do
+target 'ConnectPayExample' do
   use_frameworks!
   pod 'ConnectPay/Biometric'
   pod 'ConnectPay/OCR'

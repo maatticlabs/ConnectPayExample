@@ -21,7 +21,14 @@ final class ConnectPayWebInterfaceDemoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        setupWebView()
+        setupRightBarButton()
         
+        installAppBridges()
+    }
+    
+    private func setupWebView() {
         view.addSubview(webView)
         webView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
@@ -30,10 +37,39 @@ final class ConnectPayWebInterfaceDemoViewController: UIViewController {
             webView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             webView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
         ])
-        
-        webView.load(URLRequest(url: URL(string: "https://toss.im")!))
-        
-        installAppBridges()
+        webView.navigationDelegate = self
+        webView.load(URLRequest(url: URL(string: "https://tosspayments.com")!))
+    }
+    private func setupRightBarButton() {
+        navigationController?.navigationBar.isTranslucent = false
+        let item = UIBarButtonItem(barButtonSystemItem: .edit, target: self, action: #selector(didTapRightBarButton(_:)))
+        navigationItem.rightBarButtonItem = item
+    }
+    
+    @objc func didTapRightBarButton(_ sender: Any) {
+        let alertController = UIAlertController(
+            title: "Test URL을 입력하세요.",
+            message: "클립보드의 내용이 URL일 경우 자동으로 붙여 넣습니다.",
+            preferredStyle: .alert
+        )
+        alertController.addTextField(configurationHandler: { textField in
+            if let pasteBoardString = UIPasteboard.general.string,
+               !pasteBoardString.isEmpty, URL(string: pasteBoardString) != nil {
+                textField.text = pasteBoardString
+            }
+        })
+        alertController.addAction(
+            UIAlertAction(title: "취소", style: .cancel, handler: nil)
+        )
+        alertController.addAction(
+            UIAlertAction(title: "확인", style: .default, handler: { [weak self] _ in
+                if let urlString = alertController.textFields?.first?.text,
+                   let url = URL(string: urlString) {
+                    self?.webView.load(URLRequest(url: url))
+                }
+            })
+        )
+        present(alertController, animated: true, completion: nil)
     }
 }
 
@@ -41,6 +77,8 @@ extension ConnectPayWebInterfaceDemoViewController: WebViewControllerType {
     func installAppBridges() {
         let messageHandler = WebScriptMessageHandler()
         messageHandler.controller = self
+        
+        messageHandler.register(appBridge: GetAppInfoAppBridge())
         messageHandler.register(appBridge: HasBiometricAuthAppBridge())
         messageHandler.register(appBridge: GetBiometricAuthMethodsAppBridge())
         messageHandler.register(appBridge: VerifyBiometricAuthAppBridge())
@@ -60,5 +98,21 @@ extension ConnectPayWebInterfaceDemoViewController: WebViewControllerType {
         webView.evaluateJavaScript(javaScriptString) { (_, _) in
             
         }
+    }
+}
+
+extension ConnectPayWebInterfaceDemoViewController: WKNavigationDelegate {
+    func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
+        showAlert(error.localizedDescription)
+    }
+    
+    func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
+        showAlert(error.localizedDescription)
+    }
+    
+    func showAlert(_ message: String) {
+        let alertController = UIAlertController(title: "로드 실패", message: message, preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "확인", style: .default, handler: nil))
+        present(alertController, animated: true, completion: nil)
     }
 }

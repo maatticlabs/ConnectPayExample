@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6A6A3B84275103D900021E50"
-               BuildableName = "ConnectPayWebInterfaceExample.app"
-               BlueprintName = "ConnectPayWebInterfaceExample"
+               BuildableName = "ConnectPayExample.app"
+               BlueprintName = "ConnectPayExample"
                ReferencedContainer = "container:ConnectPayExample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,8 +45,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6A6A3B84275103D900021E50"
-            BuildableName = "ConnectPayWebInterfaceExample.app"
-            BlueprintName = "ConnectPayWebInterfaceExample"
+            BuildableName = "ConnectPayExample.app"
+            BlueprintName = "ConnectPayExample"
             ReferencedContainer = "container:ConnectPayExample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -62,8 +62,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6A6A3B84275103D900021E50"
-            BuildableName = "ConnectPayWebInterfaceExample.app"
-            BlueprintName = "ConnectPayWebInterfaceExample"
+            BuildableName = "ConnectPayExample.app"
+            BlueprintName = "ConnectPayExample"
             ReferencedContainer = "container:ConnectPayExample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

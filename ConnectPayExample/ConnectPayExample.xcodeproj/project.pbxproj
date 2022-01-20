@@ -46,7 +46,7 @@
 		6A6A3B8F275103D900021E50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A6A3B8D275103D900021E50 /* Main.storyboard */; };
 		6A6A3B91275103DA00021E50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A6A3B90275103DA00021E50 /* Assets.xcassets */; };
 		6A6A3B94275103DA00021E50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A6A3B92275103DA00021E50 /* LaunchScreen.storyboard */; };
-		D36621D7CE081C9BB4A1623A /* Pods_ConnectPayWebInterfaceExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86171C4C8BD9E738498876AC /* Pods_ConnectPayWebInterfaceExample.framework */; };
+		F01A4DED9B5CDC0AB7A07E91 /* Pods_ConnectPayExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B71F6463DBF3C594079D73EE /* Pods_ConnectPayExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,7 +84,9 @@
 		6A2153E1274FADCB00BF0C6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A2153E3274FADCB00BF0C6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A68E005278C099C00F42086 /* tosspayment_20220106.flk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tosspayment_20220106.flk; sourceTree = "<group>"; };
-		6A6A3B85275103D900021E50 /* ConnectPayWebInterfaceExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConnectPayWebInterfaceExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A68F0BE278C7E5E00F42086 /* ConnectPayExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = ConnectPayExample.entitlements; path = ConnectPayExample/ConnectPayExample.entitlements; sourceTree = "<group>"; };
+		6A68F0BF278C800100F42086 /* ConnectPayExampleRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = ConnectPayExampleRelease.entitlements; path = ConnectPayExample/ConnectPayExampleRelease.entitlements; sourceTree = "<group>"; };
+		6A6A3B85275103D900021E50 /* ConnectPayExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConnectPayExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A6A3B87275103D900021E50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A6A3B8B275103D900021E50 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6A6A3B8E275103D900021E50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -96,7 +98,6 @@
 		781881A2DA2973D32442F0C8 /* Pods-ConnectPayExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConnectPayExample.release.xcconfig"; path = "Target Support Files/Pods-ConnectPayExample/Pods-ConnectPayExample.release.xcconfig"; sourceTree = "<group>"; };
 		7C3E6E54CAA56C9B9AE723EF /* Pods-ConnectPayOCRExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConnectPayOCRExample.debug.xcconfig"; path = "Target Support Files/Pods-ConnectPayOCRExample/Pods-ConnectPayOCRExample.debug.xcconfig"; sourceTree = "<group>"; };
 		7EFB6ADF9FE5F35C499E169E /* DestinationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationCell.swift; sourceTree = "<group>"; };
-		86171C4C8BD9E738498876AC /* Pods_ConnectPayWebInterfaceExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConnectPayWebInterfaceExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		869F5E0542A4CA200FE2AE7C /* PayMethodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayMethodItem.swift; sourceTree = "<group>"; };
 		9B8ED9EF2CCE091A52EC0458 /* Pods-ConnectPayWebInterfaceExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConnectPayWebInterfaceExample.release.xcconfig"; path = "Target Support Files/Pods-ConnectPayWebInterfaceExample/Pods-ConnectPayWebInterfaceExample.release.xcconfig"; sourceTree = "<group>"; };
 		A2FA326C75603950BD3689A1 /* Pods_ConnectPayBiometricExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConnectPayBiometricExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,7 +141,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D36621D7CE081C9BB4A1623A /* Pods_ConnectPayWebInterfaceExample.framework in Frameworks */,
+				F01A4DED9B5CDC0AB7A07E91 /* Pods_ConnectPayExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +181,8 @@
 		52110F820823644F9D34FDAD = {
 			isa = PBXGroup;
 			children = (
+				6A68F0BF278C800100F42086 /* ConnectPayExampleRelease.entitlements */,
+				6A68F0BE278C7E5E00F42086 /* ConnectPayExample.entitlements */,
 				6A2153A2274FAC9300BF0C6B /* ConnectPayBiometricExample */,
 				6A2153BA274FACF000BF0C6B /* ConnectPayOCRExample */,
 				6A2153D4274FADCB00BF0C6B /* ConnectPayUIExample */,
@@ -210,7 +213,6 @@
 				A2FA326C75603950BD3689A1 /* Pods_ConnectPayBiometricExample.framework */,
 				56AE8F5E8F9672068EB9EA21 /* Pods_ConnectPayOCRExample.framework */,
 				10C9AD3857A118FF831D39B2 /* Pods_ConnectPayUIExample.framework */,
-				86171C4C8BD9E738498876AC /* Pods_ConnectPayWebInterfaceExample.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -319,7 +321,7 @@
 				6A2153A1274FAC9300BF0C6B /* ConnectPayBiometricExample.app */,
 				6A2153B9274FACF000BF0C6B /* ConnectPayOCRExample.app */,
 				6A2153D3274FADCB00BF0C6B /* ConnectPayUIExample.app */,
-				6A6A3B85275103D900021E50 /* ConnectPayWebInterfaceExample.app */,
+				6A6A3B85275103D900021E50 /* ConnectPayExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -384,9 +386,9 @@
 			productReference = 6A2153D3274FADCB00BF0C6B /* ConnectPayUIExample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6A6A3B84275103D900021E50 /* ConnectPayWebInterfaceExample */ = {
+		6A6A3B84275103D900021E50 /* ConnectPayExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6A6A3B96275103DA00021E50 /* Build configuration list for PBXNativeTarget "ConnectPayWebInterfaceExample" */;
+			buildConfigurationList = 6A6A3B96275103DA00021E50 /* Build configuration list for PBXNativeTarget "ConnectPayExample" */;
 			buildPhases = (
 				8E5C0792EF3FA908E767A6A6 /* [CP] Check Pods Manifest.lock */,
 				6A6A3B81275103D900021E50 /* Sources */,
@@ -398,9 +400,11 @@
 			);
 			dependencies = (
 			);
-			name = ConnectPayWebInterfaceExample;
+			name = ConnectPayExample;
+			packageProductDependencies = (
+			);
 			productName = ConnectPayWebInterface;
-			productReference = 6A6A3B85275103D900021E50 /* ConnectPayWebInterfaceExample.app */;
+			productReference = 6A6A3B85275103D900021E50 /* ConnectPayExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -435,6 +439,8 @@
 				en,
 			);
 			mainGroup = 52110F820823644F9D34FDAD;
+			packageReferences = (
+			);
 			productRefGroup = E8011D86784E313F1ED25637 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -442,7 +448,7 @@
 				6A2153A0274FAC9300BF0C6B /* ConnectPayBiometricExample */,
 				6A2153B8274FACF000BF0C6B /* ConnectPayOCRExample */,
 				6A2153D2274FADCB00BF0C6B /* ConnectPayUIExample */,
-				6A6A3B84275103D900021E50 /* ConnectPayWebInterfaceExample */,
+				6A6A3B84275103D900021E50 /* ConnectPayExample */,
 			);
 		};
 /* End PBXProject section */
@@ -542,15 +548,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ConnectPayWebInterfaceExample/Pods-ConnectPayWebInterfaceExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-ConnectPayExample/Pods-ConnectPayExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ConnectPayWebInterfaceExample/Pods-ConnectPayWebInterfaceExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-ConnectPayExample/Pods-ConnectPayExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ConnectPayWebInterfaceExample/Pods-ConnectPayWebInterfaceExample-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ConnectPayExample/Pods-ConnectPayExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		293CED11823EA8E670C49FDE /* [CP] Embed Pods Frameworks */ = {
@@ -641,7 +647,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ConnectPayWebInterfaceExample-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-ConnectPayExample-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1048,13 +1054,15 @@
 		};
 		6A6A3B97275103DA00021E50 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B970CC1770C1326A37C60119 /* Pods-ConnectPayWebInterfaceExample.debug.xcconfig */;
+			baseConfigurationReference = 5B19EFE1E9F537A8FCBCB78A /* Pods-ConnectPayExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_ENTITLEMENTS = ConnectPayExample/ConnectPayExample.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 202201191606;
 				DEVELOPMENT_TEAM = NXA4356DUW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ConnectPayWebInterfaceExample/Info.plist;
@@ -1069,11 +1077,12 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1.20;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tosspayments.ConnectPayWebInterface;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tosspayments.ConnectPaySample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1085,13 +1094,15 @@
 		};
 		6A6A3B98275103DA00021E50 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9B8ED9EF2CCE091A52EC0458 /* Pods-ConnectPayWebInterfaceExample.release.xcconfig */;
+			baseConfigurationReference = 781881A2DA2973D32442F0C8 /* Pods-ConnectPayExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_ENTITLEMENTS = ConnectPayExample/ConnectPayExampleRelease.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 202201191606;
 				DEVELOPMENT_TEAM = NXA4356DUW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ConnectPayWebInterfaceExample/Info.plist;
@@ -1106,10 +1117,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1.20;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tosspayments.ConnectPayWebInterface;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tosspayments.ConnectPaySample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1209,7 +1221,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6A6A3B96275103DA00021E50 /* Build configuration list for PBXNativeTarget "ConnectPayWebInterfaceExample" */ = {
+		6A6A3B96275103DA00021E50 /* Build configuration list for PBXNativeTarget "ConnectPayExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6A6A3B97275103DA00021E50 /* Debug */,
