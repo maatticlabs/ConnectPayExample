@@ -334,6 +334,7 @@
 			buildConfigurationList = 6A2153B4274FAC9400BF0C6B /* Build configuration list for PBXNativeTarget "ConnectPayBiometricExample" */;
 			buildPhases = (
 				1512B60AA2DCF208C83F72B7 /* [CP] Check Pods Manifest.lock */,
+				E4F33CDBC02EC1EB872CE99B /* [CP] Prepare Artifacts */,
 				6A21539D274FAC9300BF0C6B /* Sources */,
 				6A21539E274FAC9300BF0C6B /* Frameworks */,
 				6A21539F274FAC9300BF0C6B /* Resources */,
@@ -353,6 +354,7 @@
 			buildConfigurationList = 6A2153CA274FACF000BF0C6B /* Build configuration list for PBXNativeTarget "ConnectPayOCRExample" */;
 			buildPhases = (
 				75F16E6EFD48EEED5BBE3728 /* [CP] Check Pods Manifest.lock */,
+				0AA78293DC1976510AFDAF08 /* [CP] Prepare Artifacts */,
 				6A2153B5274FACF000BF0C6B /* Sources */,
 				6A2153B6274FACF000BF0C6B /* Frameworks */,
 				6A2153B7274FACF000BF0C6B /* Resources */,
@@ -372,6 +374,7 @@
 			buildConfigurationList = 6A2153E4274FADCB00BF0C6B /* Build configuration list for PBXNativeTarget "ConnectPayUIExample" */;
 			buildPhases = (
 				0C6467D02820952BEE2B50F7 /* [CP] Check Pods Manifest.lock */,
+				35146B6AAC2B928336796523 /* [CP] Prepare Artifacts */,
 				6A2153CF274FADCB00BF0C6B /* Sources */,
 				6A2153D0274FADCB00BF0C6B /* Frameworks */,
 				6A2153D1274FADCB00BF0C6B /* Resources */,
@@ -391,6 +394,7 @@
 			buildConfigurationList = 6A6A3B96275103DA00021E50 /* Build configuration list for PBXNativeTarget "ConnectPayExample" */;
 			buildPhases = (
 				8E5C0792EF3FA908E767A6A6 /* [CP] Check Pods Manifest.lock */,
+				D215460C2DA12F2D3C25FB40 /* [CP] Prepare Artifacts */,
 				6A6A3B81275103D900021E50 /* Sources */,
 				6A6A3B82275103D900021E50 /* Frameworks */,
 				6A6A3B83275103D900021E50 /* Resources */,
@@ -401,8 +405,6 @@
 			dependencies = (
 			);
 			name = ConnectPayExample;
-			packageProductDependencies = (
-			);
 			productName = ConnectPayWebInterface;
 			productReference = 6A6A3B85275103D900021E50 /* ConnectPayExample.app */;
 			productType = "com.apple.product-type.application";
@@ -439,8 +441,6 @@
 				en,
 			);
 			mainGroup = 52110F820823644F9D34FDAD;
-			packageReferences = (
-			);
 			productRefGroup = E8011D86784E313F1ED25637 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -498,6 +498,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0AA78293DC1976510AFDAF08 /* [CP] Prepare Artifacts */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ConnectPayOCRExample/Pods-ConnectPayOCRExample-artifacts-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Prepare Artifacts";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ConnectPayOCRExample/Pods-ConnectPayOCRExample-artifacts-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ConnectPayOCRExample/Pods-ConnectPayOCRExample-artifacts.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		0C6467D02820952BEE2B50F7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -576,6 +593,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ConnectPayOCRExample/Pods-ConnectPayOCRExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		35146B6AAC2B928336796523 /* [CP] Prepare Artifacts */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ConnectPayUIExample/Pods-ConnectPayUIExample-artifacts-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Prepare Artifacts";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ConnectPayUIExample/Pods-ConnectPayUIExample-artifacts-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ConnectPayUIExample/Pods-ConnectPayUIExample-artifacts.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		3D554E022345B52B028F6E06 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -652,6 +686,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D215460C2DA12F2D3C25FB40 /* [CP] Prepare Artifacts */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ConnectPayExample/Pods-ConnectPayExample-artifacts-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Prepare Artifacts";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ConnectPayExample/Pods-ConnectPayExample-artifacts-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ConnectPayExample/Pods-ConnectPayExample-artifacts.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4F33CDBC02EC1EB872CE99B /* [CP] Prepare Artifacts */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ConnectPayBiometricExample/Pods-ConnectPayBiometricExample-artifacts-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Prepare Artifacts";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ConnectPayBiometricExample/Pods-ConnectPayBiometricExample-artifacts-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ConnectPayBiometricExample/Pods-ConnectPayBiometricExample-artifacts.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
