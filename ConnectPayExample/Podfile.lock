@@ -1,10 +1,10 @@
 PODS:
-  - ConnectPay/Biometric (0.1.26):
+  - ConnectPay/Biometric (0.1.27):
     - ConnectPay/Core
-  - ConnectPay/Core (0.1.26)
-  - ConnectPay/OCR (0.1.26):
+  - ConnectPay/Core (0.1.27)
+  - ConnectPay/OCR (0.1.27):
     - ConnectPay/Core
-  - ConnectPay/UI (0.1.26):
+  - ConnectPay/UI (0.1.27):
     - ConnectPay/Biometric
     - ConnectPay/Core
     - ConnectPay/OCR
@@ -19,7 +19,7 @@ SPEC REPOS:
     - ConnectPay
 
 SPEC CHECKSUMS:
-  ConnectPay: 79d5d6274c228e9a5c53385f07bd5678ab8687c7
+  ConnectPay: 7240ecc89de20aeaf519bb50eea9335f843ee01a
 
 PODFILE CHECKSUM: 65742bc4cbabd5ae8672a810d37c6e49d2dc45c0
 
