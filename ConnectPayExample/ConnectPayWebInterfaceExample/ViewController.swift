@@ -12,6 +12,9 @@ import BiometricInterface
 import OCRInterface
 
 final class ConnectPayWebInterfaceDemoViewController: UIViewController {
+    enum Constants {
+        static let latestURL: String = "LastestURL"
+    }
     lazy var webView: WKWebView = {
         let webView = WKWebView()
         
@@ -37,7 +40,9 @@ final class ConnectPayWebInterfaceDemoViewController: UIViewController {
             webView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
         ])
         webView.navigationDelegate = self
-        webView.load(URLRequest(url: URL(string: "https://tosspayments.com")!))
+        
+        let urlString = UserDefaults.standard.string(forKey: Constants.latestURL) ?? "https://tosspayments.com"
+        webView.load(URLRequest(url: URL(string: urlString)!))
     }
     private func setupRightBarButton() {
         navigationController?.navigationBar.isTranslucent = false
@@ -64,6 +69,7 @@ final class ConnectPayWebInterfaceDemoViewController: UIViewController {
             UIAlertAction(title: "확인", style: .default, handler: { [weak self] _ in
                 if let urlString = alertController.textFields?.first?.text,
                    let url = URL(string: urlString) {
+                    UserDefaults.standard.set(urlString, forKey: Constants.latestURL)
                     self?.webView.load(URLRequest(url: url))
                 }
             })
